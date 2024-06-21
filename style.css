@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(90deg, rgb(144, 216, 245), rgba(4, 202, 255, 1));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("/169109_anime_landscape_anime_landscape_painting_art_landscape_3840x2160.jpg");
+    background-position: center;
+    background-size: cover; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    
+
+}
+input{
+    border-radius: 10px;
+    border: none;
+    background-color: #e7f5fad2;
+    
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(46, 38, 206);
+}
+
+#questionForm {
+    width: 70%;
+    align-self: center;
+}
+
+#question {
+    width: 90%;
+    height: 10vh;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+#explanation {
+    width: 90%;
+    height: 10vh;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+#questionForm input#option1_text,
+#option2_text,
+#option3_text,
+#option4_text {
+    width: 90%;
+    height: 7vh;
+    outline: none;
+    margin-top: 10px;
+    overflow: scroll;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    border: 1px solid #000000;
+    background-image: linear-gradient(90deg, rgb(110, 208, 235), rgb(112, 238, 125));
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    backdrop-filter: blur(8px);
+}
+
+.notepad {
+    width: 100%;
+    height: 300px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ece7ec;
+    border: 2px solid #128cd8;
+    border-radius: 10px;
+    outline: none;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1474fb;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.popup-header>button {
+    border: none;
+    border-radius: 50px;
+    width: 5vh;
+    height: 5vh;
+    font-size: large;
+}
+
+.popup-header>button:hover {
+    background-color: #e8493d;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+
+.popup-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: none;
+}
+
+.popup-buttons button:hover:first-child {
+    background-color: #12d830;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.popup-buttons button:hover:last-child {
+    background-color: #d81f12;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-part {
+    margin-left: 50px;
+
+}
+
+.btn-part>input {
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin-right: 12px;
+    cursor: pointer;
+    background-color:white;
+
+}
+
+.btn-part>button {
+    width: 150px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn-part>input:hover {
+    background-color: #12d830;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.btn-part>button:hover {
+    background-color: #1293d8;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}

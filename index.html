@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Question Form</h2>
+    <form id="questionForm">
+        <!-- ques -->
+        <label for="question">Question:</label><br>
+        <input type="text" id="question" name="question"><br><br>
+
+        <!-- options part -->
+        <label>Options:</label><br>
+        <input type="radio" id="option1" name="options" value="option1">
+        <input type="text" id="option1_text" name="option1_text"><br>
+
+        <input type="radio" id="option2" name="options" value="option2">
+        <input type="text" id="option2_text" name="option2_text"><br>
+
+        <input type="radio" id="option3" name="options" value="option3">
+        <input type="text" id="option3_text" name="option3_text"><br>
+
+        <input type="radio" id="option4" name="options" value="option4">
+        <input type="text" id="option4_text" name="option4_text"><br><br>
+
+        <!-- explance part -->
+        <label for="explanation">Explanation:</label><br>
+        <input type="text" id="explanation" name="explanation" rows="4" cols="50"><br><br>      
+    </form>
+    <br>
+    <div class="btn-part">
+        <input type="submit" value="Submit">
+        <button onclick="showPopup()">Upload Document</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="popup-header">
+            <h2>Paste Document Content</h2>
+            <button onclick="hidePopup()">X</button>
+        </div>
+        <textarea id="docContent" class="notepad"></textarea><br><br>
+        <div class="popup-buttons">
+            <button onclick="processContent()">Process</button>
+            <button onclick="hidePopup()">Close</button>
+        </div>
+    </div> 
+</body>
+</html>
